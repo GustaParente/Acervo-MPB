@@ -80,7 +80,7 @@
         "linkYoutube": "https://www.youtube.com/watch?v=NcaHI7F3EJM"
     },
     {
-        "frase": "Minha Glock faz pápum pra cima dos inimigo, pussy nigga não me testa, você não é meu amigo",
+        "frase": "Minha Glock faz pápum pra cima dos inimigo, pussy nigga não me testa, você não é meu amigo.",
         "desc": "* Pápum: onomatopeia para sons de tiro.",
         "autor": "Borges",
         "ano": 2022,
@@ -88,7 +88,7 @@
         "linkYoutube": "https://www.youtube.com/watch?v=NcaHI7F3EJM"
     },
     {
-        "frase": "Ele é tão brega, sua diss eu não vi, essa porra no estúdio pra mim é mó simples",
+        "frase": "Ele é tão brega, sua diss eu não vi, essa porra no estúdio pra mim é mó simples.",
         "desc": "* Diss: música feita para atacar algum outro artista.",
         "autor": "Derek Luccas",
         "ano": 2022,
@@ -96,7 +96,7 @@
         "linkYoutube": "https://www.youtube.com/watch?v=t3tasKv53X4"
     },
     {
-        "frase": "Negros não ligam pra fama, sapato de mocassim, eu me sinto o Obama",
+        "frase": "Negros não ligam pra fama, sapato de mocassim, eu me sinto o Obama.",
         "desc": "* Mocassim: sapato sem cadarços ou fivelas.",
         "autor": "Derek Luccas",
         "ano": 2022,
@@ -104,11 +104,19 @@
         "linkYoutube": "https://www.youtube.com/watch?v=0xRg6tmk424"
     },
     {
-        "frase": "Ela me chama pra fuder, só porque eu sou MC, PM quer meu RG, meus hater quer um RT",
-        "desc": "* RT: compartilhamento de postagem na rede social X (antigo Twitter)",
-        "autor": "Jé Santiago",
+        "frase": "Pelézinho atividade nas barca, filho da puta, brota, o arrego é bala.",
+        "desc": "* Não tem muito o que explicar.",
+        "autor": "SD9",
         "ano": 2020,
-        "link": "https://www.youtube.com/embed/DqQFwivXqxI",
-        "linkYoutube": "https://www.youtube.com/watch?v=DqQFwivXqxI"
+        "link": "https://www.youtube.com/embed/T-WxTm4W9JU",
+        "linkYoutube": "https://www.youtube.com/watch?v=T-WxTm4W9JU"
+    },
+    {
+        "frase": "Sexta-feira, duas perna, oito molas e um oitin, oi, oi, reflexo de bolinha, salão dos mídias é na risca, é na linha.",
+        "desc": "* Reflexo de bolinha: estilo de cabelo com vários círculos descoloridos.",
+        "autor": "Pior Versão de Mim",
+        "ano": 2021,
+        "link": "https://www.youtube.com/embed/6P30f7GmOPA",
+        "linkYoutube": "https://www.youtube.com/watch?v=6P30f7GmOPA"
     }
 ]
