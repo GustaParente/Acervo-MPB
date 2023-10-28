@@ -29,8 +29,7 @@ function obterFraseAleatoria() {
 
         const linkMusicaElement = document.getElementById('linkMusica');
         linkMusicaElement.href = fraseAleatoria.linkYoutube;
-        linkMusicaElement.style.display = 'block';
-        
+        linkMusicaElement.style.display = 'block';        
       })
       .catch(error => {
         console.error('Erro ao obter frases: ', error);
