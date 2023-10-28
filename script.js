@@ -4,7 +4,6 @@ function obterFraseAleatoria() {
       .then(data => {
         // Escolher uma frase aleatória
         const fraseAleatoria = data[Math.floor(Math.random() * data.length)];
-        
         // Exibir a frase na página
         const fraseElement = document.getElementById('frase');
         const fraseAutorAno = document.getElementById('autor');
