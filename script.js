@@ -1,9 +1,20 @@
+let ultimoIndice = -1;
+
 function obterFraseAleatoria() {
     fetch('frases.json')
       .then(response => response.json())
       .then(data => {
-        // Escolher uma frase aleatória
-        const fraseAleatoria = data[Math.floor(Math.random() * data.length)];
+        let novoIndice;
+        do {
+          novoIndice = Math.floor(Math.random() * data.length);
+        } while (novoIndice === ultimoIndice);
+        
+        // Armazene o novo índice como o último índice
+        ultimoIndice = novoIndice;
+
+        // Use a frase aleatória com o índice gerado
+        const fraseAleatoria = data[novoIndice];
+  
         // Exibir a frase na página
         const fraseElement = document.getElementById('frase');
         const fraseAutorAno = document.getElementById('autor');
@@ -17,7 +28,7 @@ function obterFraseAleatoria() {
         fraseVideo.src = fraseAleatoria.link;
 
         const linkMusicaElement = document.getElementById('linkMusica');
-        linkMusicaElement.href = fraseAleatoria.link;
+        linkMusicaElement.href = fraseAleatoria.linkYoutube;
         linkMusicaElement.style.display = 'block';
         
       })
