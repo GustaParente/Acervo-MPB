@@ -12,7 +12,21 @@
 
     <div class="cartao">
         <h1 class="title">Canetadas aleatórias</h1>
-        <button id="botao" class="botao">Clique para gerar</button>
+        <button id="botao" onclick="obterFraseAleatoria()" class="botao"><img class="random" src="random.svg">Aleatório</button>
+        <span>Ou escolha abaixo:</span>
+        <select class="seletor" id='seletor' onchange='obterFraseAutor()'>
+            <option value=""></option>   
+            <option value="Pior Versão de Mim">Pior Versão de Mim</option>         
+            <option value="Putodiparis">Putodiparis</option>
+            <option value="Derek Luccas">Derek Luccas</option>
+            <option value="NGC Daddy">NGC Daddy</option>
+            <option value="Yung Nobre">Yung Nobre</option>
+            <option value="Filipe Ret">Filipe Ret</option>
+            <option value="Borges">Borges</option>
+            <option value="MC Igu">MC Igu</option>
+            <option value="Abbot">Abbot</option>
+            <option value="SD9">SD9</option>
+        </select>
         <p class="frase" id="frase"></p>
         <p class="autor" id="autor"></p>
         <p class="desc" id="desc"></p>

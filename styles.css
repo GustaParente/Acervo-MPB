@@ -5,6 +5,7 @@
     padding: 0;
     margin: 0 auto;
     box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 
 body {
@@ -53,6 +54,26 @@ body {
     filter: invert(82%) sepia(33%) saturate(4485%) hue-rotate(2deg) brightness(108%) contrast(105%);
 }
 
+.seletor {
+    margin-top: 2%;
+    border-radius: 5px;
+    padding: auto;
+    width: 30%;
+    height: 40px;
+    font-family: sans-serif;
+}
+
+.seletor option {
+    font-family: sans-serif;
+}
+
+.random {
+    width: 25px;
+    filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(185deg) brightness(95%) contrast(106%);
+    margin-right: .5vw;
+    margin-top: -3px;
+}
+
 .botao {
     background-color: rgb(17, 80, 255);
     color: #fff;
@@ -61,6 +82,8 @@ body {
     border-radius: 10px;
     border: none;
     cursor: pointer;
+    margin-bottom: 1.5%;
+    margin-top: 1.5%;
 }
 
 .botao:hover {
@@ -74,13 +97,13 @@ body {
 }
 
 .footer {
-    margin-top: 5vh;
     text-align: center;
+    font-style: italic;
 }
 
 @media screen and (max-width: 600px) {
     .cartao {
-        margin-top: 15%;
+        margin-top: 5%;
         padding: 5%
     }
 
@@ -92,5 +115,9 @@ body {
         margin-bottom: 5%;
         width: 300px;
         height: 200px;
+    }
+
+    .seletor {
+        width: 60%;
     }
 }
