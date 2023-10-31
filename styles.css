@@ -47,10 +47,10 @@ body {
     width: 180px;
 }
 
-.youtube {
-    width: 25px;
-    margin-right: 0.3vw;
-    filter: invert(15%) sepia(51%) saturate(7500%) hue-rotate(356deg) brightness(105%) contrast(118%);
+.icone {
+    width: 20px;
+    margin-right: 0.4vw;
+    filter: invert(82%) sepia(33%) saturate(4485%) hue-rotate(2deg) brightness(108%) contrast(105%);
 }
 
 .botao {
