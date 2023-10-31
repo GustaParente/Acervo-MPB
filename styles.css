@@ -144,6 +144,10 @@ body {
         padding: 3%
     }
 
+    .botao2 {
+        display: none;
+    }
+
     .desc {
         font-size: 0.8rem;
     }
