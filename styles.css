@@ -54,6 +54,13 @@ body {
     filter: invert(82%) sepia(33%) saturate(4485%) hue-rotate(2deg) brightness(108%) contrast(105%);
 }
 
+.volume {
+    width: 20px;
+    margin-right: 0.4vw;
+    margin-top: -3px;
+    filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(185deg) brightness(95%) contrast(106%);
+}
+
 .seletor {
     margin-top: 2%;
     border-radius: 5px;
@@ -86,6 +93,32 @@ body {
     margin-top: 1.5%;
 }
 
+.botao:focus {
+    border: none;
+    outline: none;
+}
+
+.botao2:focus {
+    border: none;
+    outline: none;
+}
+
+.botao2 {
+    background-color: rgb(255, 60, 60);
+    color: #fff;
+    width: 140px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 3%;
+    margin-top: 0.5%;
+}
+
+.botao2:hover {
+    background-color: rgb(34, 34, 34);
+}
+
 .botao:hover {
     background-color: rgb(34, 34, 34);
 }
@@ -96,6 +129,10 @@ body {
     height: 280px;
 }
 
+.hidden {
+    display: none;
+}
+
 .footer {
     text-align: center;
     font-style: italic;
@@ -103,12 +140,20 @@ body {
 
 @media screen and (max-width: 600px) {
     .cartao {
-        margin-top: 5%;
-        padding: 5%
+        margin-top: 2%;
+        padding: 3%
+    }
+
+    .desc {
+        font-size: 0.8rem;
+    }
+
+    .autor {
+        font-size: .9rem;
     }
 
     .frase {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     
     #videoMusica {
@@ -117,7 +162,12 @@ body {
         height: 200px;
     }
 
+    .title {
+        font-size: 1.5rem;
+    }
+
     .seletor {
         width: 60%;
+        height: 30px;
     }
 }
