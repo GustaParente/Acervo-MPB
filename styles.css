@@ -13,6 +13,10 @@ body {
     max-height: 100vh;
 }
 
+.main {
+    background-color: rgb(22, 21, 31);
+}
+
 .title {
     font-family: 'Rowdies', sans-serif;
 }
@@ -26,6 +30,36 @@ body {
     max-width: 800px;
     margin-top: 2%;
     max-height: 100vh;
+}
+
+.cartaodark {
+    background-color: rgb(22, 21, 31);
+    color: rgb(209, 209, 209);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 800px;
+    margin-top: 2%;
+    max-height: 100vh;
+}
+
+.botaodark {
+    background-color: rgb(17, 80, 255);
+    color: #fff;
+    width: 180px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 1.5%;
+    margin-top: 1.5%;
+}
+
+.botaodark:hover{
+    outline: auto;
+    background-color: rgb(34, 34, 34);
 }
 
 .frase {
@@ -59,6 +93,23 @@ body {
     margin-right: 0.4vw;
     margin-top: -3px;
     filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(185deg) brightness(95%) contrast(106%);
+}
+
+.botao2dark {
+    background-color: rgb(255, 60, 60);
+    color: #fff;
+    width: 140px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 3%;
+    margin-top: 0.5%;
+}
+
+.botao2dark:hover {
+    outline: auto;
+    background-color: rgb(34, 34, 34);
 }
 
 .seletor {
@@ -138,6 +189,55 @@ body {
     font-style: italic;
 }
 
+.footerdark {
+    color: rgb(209, 209, 209);
+}
+
+.darkmodebtn {
+    position: fixed;
+    bottom: 40px; 
+    right: 40px;
+    padding: 15px;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    background-color: #16151f;
+}
+
+.darkmodebtn:focus {
+    outline: none;
+}
+
+.darkmodebtndark:focus {
+    outline: none;
+}
+
+
+.darkmodebtndark {
+    position: fixed;
+    bottom: 40px; 
+    right: 40px;
+    padding: 15px;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(209, 209, 209);
+}
+
+.darkbtndark {
+    filter: invert(4%) sepia(5%) saturate(5700%) hue-rotate(206deg) brightness(96%) contrast(91%);
+}
+
+.darkbtn {
+    filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(185deg) brightness(95%) contrast(106%);
+}
+
 @media screen and (max-width: 600px) {
     .cartao {
         margin-top: 2%;
@@ -174,4 +274,33 @@ body {
         width: 60%;
         height: 30px;
     }
+
+    .darkmodebtn {
+        position: fixed;
+        top: 56px; 
+        right: 10px;
+        padding: 12px;
+        color: #fff;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        background-color: #16151f;
+    }
+
+    .darkmodebtndark {
+        position: fixed;
+        top: 56px; 
+        right: 10px;
+        padding: 12px;
+        color: #fff;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        background-color: rgb(209, 209, 209);
+    }
+
 }
