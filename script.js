@@ -30,9 +30,9 @@ function obterFraseAutor() {
         const fraseVideo = document.getElementById('videoMusica');
         fraseVideo.src = fraseAleatoria.link;
 
-        const linkMusicaElement = document.getElementById('linkMusica');
-        linkMusicaElement.href = fraseAleatoria.linkYoutube;
-        linkMusicaElement.style.display = 'block';        
+        const letraElement = document.getElementById('letra');
+        letraElement.href = fraseAleatoria.letra;
+        letraElement.style.display = 'block';        
       })
       .catch(error => {
         console.error('Erro ao obter frases: ', error);
@@ -66,9 +66,9 @@ function obterFraseAutor() {
           const fraseVideo = document.getElementById('videoMusica');
           fraseVideo.src = fraseAleatoria.link;
   
-          const linkMusicaElement = document.getElementById('linkMusica');
-          linkMusicaElement.href = fraseAleatoria.linkYoutube;
-          linkMusicaElement.style.display = 'block';        
+          const letraElement = document.getElementById('letra');
+          letraElement.href = fraseAleatoria.letra;
+          letraElement.style.display = 'block';        
         })
         .catch(error => {
           console.error('Erro ao obter frases: ', error);
@@ -116,36 +116,3 @@ function obterFraseAutor() {
 
             voiceList.selectedIndex = selectedIndex;
         }
-
-function darkMode(){
-  const body = document.getElementById('body');
-  const botao = document.getElementById('botao');
-  const botao2 = document.getElementById('btnSpeak');
-  const cartao = document.getElementById('cartao');
-  const footer = document.getElementById('footer');
-  const btndark = document.getElementById('darkmode');
-  const iconedk = document.getElementById('iconedk');
-
-  if (body.classList.contains('main')){
-    body.classList.remove('main');
-    botao.classList.remove('botaodark');
-    botao2.classList.remove('botao2dark');
-    cartao.classList.remove('cartaodark');
-    footer.classList.remove('footerdark');
-    btndark.classList.remove('darkmodebtndark');
-    iconedk.classList.add('darkbtn');
-    
-} else {
-    body.classList.add('main');
-    botao.classList.add('botaodark');
-    botao2.classList.add('botao2dark');
-    cartao.classList.add('cartaodark');
-    footer.classList.add('footerdark');
-    btndark.classList.add('darkmodebtndark');
-    iconedk.classList.remove('darkbtn');
-    
-}
-}
-
-const btndark = document.getElementById('darkmode');
-btndark.addEventListener('click', darkMode());

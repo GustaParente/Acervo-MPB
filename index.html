@@ -8,42 +8,48 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
-<body id="body" class="">
+<body id="body" class="master">
     <div class="hidden">
         Select Voice: <select id='voiceList'></select> <br><br>  
     </div>
-
-    <button id="darkmode" onclick="darkMode()" class="darkmodebtn"><img id="iconedk" class="darkbtn darkbtndark" src="dark.svg"><span class="hidden">Mudar</span></button>
-
-    <div id="cartao" class="cartao">
-        <h1 class="title">Canetadas aleatórias</h1>
-        <button id="botao" onclick="obterFraseAleatoria()" class="botao"><img class="random" src="random.svg">Aleatório</button>
-        <span>Ou escolha abaixo:</span>
-        <select class="seletor" id='seletor' onchange='obterFraseAutor()'>
-            <option value=""></option>   
-            <option value="Pior Versão de Mim">Pior Versão de Mim</option>         
-            <option value="MC Poze do Rodo">MC Poze do Rodo</option>
-            <option value="Derek Luccas">Derek Luccas</option>
-            <option value="Putodiparis">Putodiparis</option>
-            <option value="Kanye West">Kanye West</option>
-            <option value="Yung Nobre">Yung Nobre</option>
-            <option value="Filipe Ret">Filipe Ret</option>
-            <option value="NGC Daddy">NGC Daddy</option>
-            <option value="Borges">Borges</option>
-            <option value="MC Igu">MC Igu</option>
-            <option value="Abbot">Abbot</option>
-            <option value="SD9">SD9</option>
-        </select>
-        <p class="frase" id="frase"></p>
-        <p class="autor" id="autor"></p>
-        <button class='botao2' id='btnSpeak'><img class="volume" src="volume.svg">Ouvir</button>
-        <p class="desc" id="desc"></p>
-        <a class="link" id="linkMusica" style="display: none;" target="_blank"><img class="icone" src="music.svg">Letra completa</a>
-
-        <iframe id="videoMusica" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div id="topo" class="topo">
+        <div class="topo1">
+            <h1 class="title">Canetadas Puras</h1>
+        </div>
+        <div class="topo2">
+            <button id="botao" onclick="obterFraseAleatoria()" class="botao"><img id="shuffle" class="random" src="random.svg">Aleatório</button>
+            <span class="escolha">Ou escolha o artista:</span>
+            <select class="seletor" id='seletor' onchange='obterFraseAutor()'>
+                <option value=""></option>   
+                <option value="Pior Versão de Mim">Pior Versão de Mim</option>         
+                <option value="MC Poze do Rodo">MC Poze do Rodo</option>
+                <option value="Derek Luccas">Derek Luccas</option>
+                <option value="Putodiparis">Putodiparis</option>
+                <option value="Kanye West">Kanye West</option>
+                <option value="Yung Nobre">Yung Nobre</option>
+                <option value="Filipe Ret">Filipe Ret</option>
+                <option value="NGC Daddy">NGC Daddy</option>
+                <option value="Borges">Borges</option>
+                <option value="MC Igu">MC Igu</option>
+                <option value="Abbot">Abbot</option>
+                <option value="SD9">SD9</option>
+            </select>
+        </div>
+    </div>
+    <div class="cartao-geral">
+        <div id="cartao-esquerda" class="cartao-esquerda">
+            <p class="frase" id="frase"></p>
+            <p class="autor" id="autor"></p>
+            <button class='botao2' id='btnSpeak'><img id="listen" class="volume" src="volume.svg">Ouvir</button>
+            <p class="desc" id="desc"></p>
+        </div>
+        <div id="cartao-direita" class="cartao-direita">
+            <a class="link" id="letra" style="display: none;" target="_blank"><img class="icone" src="music.svg">Letra completa</a>
+            <iframe id="videoMusica" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
     </div>
 
-    <p id="footer" class="footer">&#169; 2023 gap.</p>
+    <p id="footer" class="footer"><span class="creditos">&#169; 2023 gap.</span></p>
     <script src="script.js"></script>
 </body>
 </html>
