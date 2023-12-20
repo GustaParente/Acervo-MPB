@@ -1,0 +1,465 @@
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Montserrat+Alternates:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+* {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.master {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../assets/pipes.png");
+}
+
+.title {
+  font-family: "Lobster", sans-serif;
+  color: #ffff64;
+  margin-top: 5px;
+}
+
+.topo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 12%;
+  background: linear-gradient(to top, #ffff64 50%, #000000 50%);
+  color: #1e1e1e;
+}
+
+.escolha {
+  margin: 0;
+}
+
+.topo1 {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.topo2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  width: 100%;
+  height: 50%;
+}
+
+.cartao-geral {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  height: 80%;
+  width: 95vw;
+  gap: 2.5%;
+}
+
+.cartao-direita {
+  box-shadow: 10px 10px 0px 0px rgb(0, 0, 0);
+  width: 39.25%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 1%;
+  background: linear-gradient(to left, #ffff64 50%, #000000 50%);
+}
+
+.cartao-esquerda {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 59.25%;
+  margin-top: 0%;
+  padding: 2%;
+  height: 90%;
+  box-shadow: 10px 10px 0px 0px rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+.frase {
+  margin-top: 0%;
+  font-size: 2rem;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: bold;
+}
+
+.autor {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.desc {
+  font-style: italic;
+}
+
+.link {
+  margin-bottom: 5%;
+  display: block;
+  width: 180px;
+  border-radius: 30px;
+  color: white;
+  background-color: black;
+  padding: 5px;
+}
+
+.creditos {
+  text-align: center;
+  width: 240px;
+  border-radius: 30px;
+  color: white;
+  background-color: black;
+  padding: 5px;
+}
+
+.link:hover {
+  margin-bottom: 5%;
+  display: block;
+  width: 180px;
+  border-radius: 30px;
+  color: #ffff64;
+  background-color: black;
+}
+
+.icone {
+  width: 20px;
+  margin-right: 0.4vw;
+  filter: invert(82%) sepia(33%) saturate(4485%) hue-rotate(2deg)
+    brightness(108%) contrast(105%);
+}
+
+.volume {
+  width: 20px;
+  margin-right: 0.4vw;
+  margin-top: -3px;
+  filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(185deg)
+    brightness(95%) contrast(106%);
+}
+
+.seletor {
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+  border-radius: 5px;
+  padding: auto;
+  width: 280px;
+  height: 40px;
+  font-family: sans-serif;
+}
+
+.seletor option {
+  font-family: sans-serif;
+}
+
+.random {
+  width: 25px;
+  filter: invert(87%) sepia(81%) saturate(415%) hue-rotate(344deg)
+    brightness(109%) contrast(106%);
+  margin-right: 0.5vw;
+  margin-top: -3px;
+}
+
+.botao {
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  width: 180px;
+  height: 40px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 0.5%;
+  margin-top: 0.5%;
+}
+
+.botao:focus {
+  border: none;
+  outline: none;
+}
+
+.botao:hover {
+  outline: #000000 solid 2px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.botao:hover .random {
+  filter: invert(0%) sepia(0%) saturate(7470%) hue-rotate(272deg)
+    brightness(108%) contrast(108%);
+}
+
+.botao2 {
+  background-color: rgb(255, 39, 39);
+  color: #fff;
+  width: 140px;
+  height: 30px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 3%;
+  margin-top: 0.5%;
+}
+
+.botao2:hover {
+  background-color: rgb(34, 34, 34);
+}
+
+.ouvir-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  width: 70%;
+  height: 45%;
+  box-shadow: 10px 10px 0px 0px rgb(0, 0, 0);
+  gap: 1vh;
+}
+
+.ouvir-container p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#video {
+  color: white;
+  background-color: rgb(255, 39, 39);
+  width: 200px;
+  border-radius: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+#video:hover {
+  background-color: #000000;
+  color: white;
+  transition: 0.3s;
+}
+
+.yt-logo {
+  width: 25px;
+}
+
+#spotify {
+  color: black;
+  background-color: #1fdf64;
+  width: 200px;
+  border-radius: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+#spotify:hover {
+  background-color: #000000;
+  color: white;
+  transition: 0.3s;
+}
+
+#deezer {
+  color: white;
+  background-color: #b560ff;
+  width: 200px;
+  border-radius: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+#deezer:hover {
+  background-color: #000000;
+  color: white;
+  transition: 0.3s;
+}
+
+.hidden {
+  display: none;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+  width: 100vw;
+  height: 8%;
+  margin-bottom: 0%;
+  background: linear-gradient(to top, #ffff64 50%, #000000 50%);
+}
+
+#videoMusica {
+  width: 70%;
+}
+
+@media screen and (max-width: 1000px) {
+  .cartao-geral {
+    flex-direction: column;
+    padding: 0;
+    height: 80%;
+    width: 95vw;
+    gap: 2%;
+  }
+
+  .cartao-direita {
+    box-shadow: none;
+    width: 100%;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1%;
+  }
+
+  .cartao-esquerda {
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    margin-top: 0%;
+    padding: 2%;
+    height: 45%;
+  }
+
+  .frase {
+    font-size: 1.8rem;
+  }
+
+  .ouvir-container {
+    width: 50%;
+    height: 65%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .frase {
+    font-size: 1.6rem;
+  }
+
+  .escolha {
+    display: none;
+  }
+
+  .topo {
+    box-shadow: none;
+  }
+
+  .cartao-esquerda {
+    box-shadow: none;
+  }
+
+  .cartao-direita {
+    box-shadow: none;
+  }
+
+  .footer {
+    box-shadow: none;
+  }
+
+  .botao2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topo2 {
+    padding: 2%;
+  }
+
+  .seletor {
+    width: 60%;
+  }
+
+  .botao2 {
+    display: none;
+  }
+
+  .desc {
+    font-size: 0.8rem;
+  }
+
+  .autor {
+    font-size: 0.9rem;
+  }
+
+  .frase {
+    font-size: 1.4rem;
+  }
+
+  .ouvir-container {
+    margin-bottom: 5%;
+    width: 65%;
+    height: 65%;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .seletor {
+    width: 60%;
+    height: 30px;
+  }
+
+  .cartao-esquerda {
+    padding: 2%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .topo2 {
+    padding: 2%;
+  }
+
+  .seletor {
+    width: 60%;
+  }
+
+  .frase {
+    font-size: 1rem;
+  }
+
+  .cartao-esquerda {
+    padding: 2%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .botao {
+    height: 30px;
+  }
+
+  #video,
+  #spotify,
+  #deezer {
+    width: 150px;
+    height: 25px;
+  }
+
+  #video {
+    margin-top: -15px;
+  }
+}
